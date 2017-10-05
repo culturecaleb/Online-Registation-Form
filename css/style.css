@@ -1,0 +1,207 @@
+/*Base Styles*/
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-family: 'Corben', Georgia, Times, serif;
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Nobile', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+
+/*Container*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	width: 93%;
+}
+
+
+/*Elements*/
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	border-bottom: 4px solid black;
+	box-shadow: 0 3px 0 transparent;
+}
+
+header {
+	display: flex;
+	background-color: #A9B7C0;
+	justify-content: center;
+}
+
+.name {
+	color: #fff;
+	align-self: center;
+	text-align: center;
+}
+
+.heading h2, .heading p {
+	text-align: center;
+}
+
+.heading p {
+	color: #CECECE;
+	margin-bottom: 20px;
+}
+
+
+/*Form styles*/
+
+.contact-info {
+	border: none;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+	border-bottom: 3px solid #000;
+}
+
+.contact-title {
+	font-size: 25px;
+	padding: 30px 0;
+	text-align: center;
+	color: #C7D8C6;
+}
+
+label {
+	margin-bottom: 4px;
+}
+
+input[type="text"], select {
+	background-color: #ECECEC;
+	border: none;
+	width: 100%;
+	height: 45px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder {
+	text-align: right;
+	padding-right: 10px;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.county-option {
+	margin-bottom: 20px;
+}
+
+.newsletter {
+	border: none;
+}
+
+.newsletter-title {
+	font-size: 25px;
+	padding: 30px 0;
+	text-align: center;
+	color: #C7D8C6;
+}
+
+label[for="html_news_"] {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.checkbox-label {
+	padding-left: 10px;
+}
+
+.btn {
+	padding-bottom: 7px;
+}
+
+.java-btn {
+	margin-bottom: 20px;
+}
+
+.plain-btn {
+	margin-bottom: 20px;
+}
+
+label[for="html_format_"], label[for="topics"] {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input[type="text"], textarea:focus {
+	cursor: pointer;
+}
+
+.textarea {
+	background-color: #ECECEC;
+	border: none;
+	width: 100%;
+	height: 100px;
+	border-radius: 6px;
+	margin-bottom: 25px;
+}
+
+.submit-btn {
+	height: 50px;
+	width: 100%;
+	border: none;
+	background-color: #A7D2CB;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.copyright {
+	text-align: center;
+	font-style: italic;
+}
+
+
+/*media query*/
+
+@media (min-width: 768px) {
+	.container {
+		padding-top: 60px;
+	}
+	.contact-title {
+		text-align: left;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+	}
+	.text-field {
+		display: flex;
+	}
+	.text-field label {
+		white-space: nowrap;
+		padding-right: 20px;
+		align-self: center;
+		flex: 1 20%;
+	}
+	.newsletter-title {
+		text-align: left;
+	}
+}
